@@ -1,4 +1,4 @@
-//let memory = [];
+let memory = [];
 let ops = '/*-+';
 let isCalculated = false;
 const allElems = getElems();
