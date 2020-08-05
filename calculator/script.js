@@ -1,7 +1,6 @@
 let memory = [];
 let ops = '/*-+';
 let isCalculated = false;
-let negActive = false;
 
 // NUMBERS
 let num1 = document.querySelector('.num1');
@@ -68,8 +67,6 @@ function limit() {
 
 function numGenerator(num) {
     return function() {
-
-        
         if (isCalculated && !ops.includes(getLastAdded())) {
             clearIt();
         }
@@ -97,6 +94,7 @@ function addDot() {
 }
 
 function negate() {
+    
     let negative = neg.innerHTML.replace('(-)', '-');
 
     if (!eval(display.innerHTML)) {
@@ -116,6 +114,7 @@ function operator(op){
     return function() {
 
         let char = getLastAdded();
+        
         if(isCalculated){
             isCalculated = false;
         }
@@ -163,7 +162,9 @@ function clearIt() {
 }
 
 function backSpace() {
+    
     let result = display.innerHTML;
+    
     if (result === '0' || result.length === 1) {
         display.innerHTML = '0';
     }
