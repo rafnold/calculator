@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+
 body {
     margin: 0 auto;
     text-align: center;
@@ -9,12 +9,12 @@ body {
 .container {
     display: grid;
     max-width: 436px;
-    grid-template-areas:  "result result result  result"
-                          "clear  clear  bkSpace div"
-                          "num7   num8   num9    mul"
-                          "num4   num5   num6    sub"
-                          "num1   num2   num3    add"
-                          "numDot num0   numNeg  eq";
+    grid-template-areas: "result result result  result"
+        "clear  clear  bkSpace div"
+        "num7   num8   num9    mul"
+        "num4   num5   num6    sub"
+        "num1   num2   num3    add"
+        "numDot num0   numNeg  eq";
     border: 1px solid black;
     padding: 3px;
     background-color: rgb(255, 255, 255);
@@ -24,91 +24,110 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 button {
     color: rgb(249, 245, 255);
     background-color: rgb(67, 80, 94);
     padding: 1.5em;
     font-family: 'Inconsolata', monospace;
-    /* font-family: 'Orbitron', sans-serif; */
     font-size: 1em;
-    min-width: 100px;
 }
+
 button:hover {
     background-color: #ffffff;
     color: black;
 }
+
 .result {
     grid-area: result;
     padding: 50px 8px 8px 8px;
     font-size: 2em;
     color: rgb(0, 0, 0) !important;
-    /* background-color: rgb(106, 127, 150) !important; */
     background-color: rgb(255, 255, 255) !important;
     text-align: right;
     overflow: hidden;
 }
+
 .bkSpace {
     grid-area: bkSpace;
     background-color: rgb(223, 92, 92);
 }
+
 .clear {
     grid-area: clear;
     background-color: rgb(223, 92, 92);
 }
+
 .num7 {
     grid-area: num7;
 }
+
 .num8 {
     grid-area: num8;
-}  
+}
+
 .num9 {
     grid-area: num9;
-}  
+}
+
 .num4 {
     grid-area: num4;
-}  
+}
+
 .num5 {
     grid-area: num5;
-}  
+}
+
 .num6 {
     grid-area: num6;
 }
+
 .num1 {
     grid-area: num1;
-}  
+}
+
 .num2 {
     grid-area: num2;
-}  
+}
+
 .num3 {
     grid-area: num3;
 }
+
 .num0 {
     grid-area: num0;
 }
+
 .numNeg {
     grid-area: numNeg;
     background-color: rgb(103, 123, 145);
 }
+
 .div {
     grid-area: div;
     background-color: rgb(103, 123, 145);
 }
+
 .mul {
     grid-area: mul;
     background-color: rgb(103, 123, 145);
 }
+
 .sub {
     grid-area: sub;
     background-color: rgb(103, 123, 145);
 }
+
 .numDot {
     grid-area: numDot;
     background-color: rgb(103, 123, 145);
 }
+
 .eq {
     grid-area: eq;
     background-color: rgb(216, 103, 11);
 }
+
 .add {
     grid-area: add;
     background-color: rgb(103, 123, 145);
